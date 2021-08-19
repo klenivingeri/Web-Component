@@ -3,11 +3,12 @@
 class StarRater extends HTMLElement{
   constructor(){
     super()
-    const shadow = this.attachShadow({mode: 'open'})
+    const shadow = this.attachShadow({mode: 'open'})// aceita alterações
     shadow.innerHTML = `Hello from Shadow`
   }
 }
 
+// É obrigatorio a tag ter "-" no nome,
 customElements.define('star-rater', StarRater);
 ~~~
 
